@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>talbidev — Android Apps</title>
+<meta name="description" content="talbidev builds simple, reliable Android apps. Round Timer: Boxing & HIIT — interval timer for boxing, HIIT and Tabata.">
+<style>
+  :root {
+    --bg: #0B1220; --surface: #131C2E; --border: #1E293B;
+    --text: #F8FAFC; --muted: #94A3B8; --green: #22C55E; --red: #EF4444;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg); color: var(--text);
+    min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; padding: 48px 20px;
+  }
+  .ring {
+    width: 72px; height: 72px; border-radius: 50%;
+    border: 9px solid var(--green); border-top-color: var(--red);
+    margin-bottom: 20px;
+  }
+  h1 { font-size: 1.8rem; letter-spacing: -0.5px; }
+  .tagline { color: var(--muted); margin: 8px 0 40px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 24px; max-width: 460px; width: 100%;
+  }
+  .card h2 { font-size: 1.15rem; margin-bottom: 6px; }
+  .card p { color: var(--muted); font-size: 0.95rem; line-height: 1.5; }
+  .badges { margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .badge {
+    font-size: 0.78rem; padding: 4px 10px; border-radius: 999px;
+    border: 1px solid var(--border); color: var(--muted);
+  }
+  .cta {
+    display: inline-block; margin-top: 20px; padding: 10px 20px;
+    background: var(--green); color: #052e16; font-weight: 600;
+    border-radius: 10px; text-decoration: none; font-size: 0.95rem;
+  }
+  .cta:hover { filter: brightness(1.1); }
+  footer { margin-top: auto; padding-top: 48px; color: var(--muted); font-size: 0.85rem; text-align: center; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+
+  <div class="ring" aria-hidden="true"></div>
+  <h1>talbidev</h1>
+  <p class="tagline">Simple, reliable Android apps.</p>
+
+  <div class="card">
+    <h2>Round Timer: Boxing &amp; HIIT</h2>
+    <p>Interval timer for boxing, HIIT, Tabata and circuit training.
+       Huge full-screen display, loud bell that ducks your music,
+       and no ads during your workout. Ever.</p>
+    <div class="badges">
+      <span class="badge">Boxing</span>
+      <span class="badge">HIIT</span>
+      <span class="badge">Tabata</span>
+      <span class="badge">Free</span>
+    </div>
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.talbidev.roundtimer">
+      Get it on Google Play
+    </a>
+  </div>
+
+  <footer>
+    <p>Contact: <a href="mailto:talbidev@gmail.com">talbidev@gmail.com</a></p>
+    <p><a href="https://talbidev.github.io/roundtimer-privacy/">Privacy Policy</a></p>
+  </footer>
+
+</body>
+</html>
